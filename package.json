@@ -1,0 +1,57 @@
+{
+  "name": "learn-nightwatch",
+  "version": "1.0.24",
+  "description": "Learn how to use nightwatch for front-end testing. step-by-step tutorial",
+  "main": "index.js",
+  "engines": {
+    "node": "4.4.6"
+  },
+  "scripts": {
+    "test": "nightwatch -p",
+    "ie": "nightwatch -e ie11",
+    "sauce": "nightwatch -e chrome,ie11,android_s4_emulator,iphone_6_simulator",
+    
+    "e2e": "npm run sauce; npm run upload",
+    "dev": "nodemon -w test/index.html --delay 250ms --exec 'npm run upload'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwyl/learn-nightwatch.git"
+  },
+  "author": "DWYL & Friends",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/dwyl/learn-nightwatch/issues"
+  },
+  "homepage": "https://github.com/dwyl/learn-nightwatch#readme",
+  "dependencies": {
+    "node": "^10.5.0",
+    "saucelabs": "^1.3.0",
+    "save": "^2.3.2"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.7.13",
+    "chromedriver": "^2.40.0",
+    "edgedriver": "^4.17134.0",
+    "env2": "^2.2.0",
+    "mime-types": "^2.1.13",
+    "nightwatch": "^0.9.21",
+    "nodemon": "^1.11.0",
+    "selenium-download": "^2.0.12",
+    "selenium-server": "^2.53.1",
+    "selenium-server-standalone-jar": "^2.53.1"
+  },
+  "keywords": [
+    "nightwatch",
+    "testing",
+    "front-end",
+    "UI",
+    "browser",
+    "test",
+    "testing",
+    "step-by-step tutorial",
+    "how to",
+    "User Acceptance Testing",
+    "UAT"
+  ]
+}
